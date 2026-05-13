@@ -1,0 +1,15 @@
+venv/
+medsync_env/
+data/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+*.bin
+*.db

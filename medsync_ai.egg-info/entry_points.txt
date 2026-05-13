@@ -1,0 +1,3 @@
+[console_scripts]
+medsync = medsync_ai.main:main
+medsync-api = medsync_ai.api.server:main

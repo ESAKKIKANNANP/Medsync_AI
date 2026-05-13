@@ -1,0 +1,104 @@
+version: '3.8'
+
+services:
+  # =========================================================================
+  # MEDSYNC AI BACKEND SERVICE
+  # =========================================================================
+  medsync-backend:
+    build: .
+    container_name: medsync-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - LLM_API_URL=http://ollama:11434
+      - LLM_MODEL=openhermes2.5
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+      - VECTOR_DB_PATH=/app/medsync_ai/chromadb_store
+    volumes:
+      - ./data:/app/data:ro
+      - ./medsync_ai:/app/medsync_ai
+      - medsync-chromadb:/app/medsync_ai/chromadb_store
+      - ./logs:/app/logs
+    depends_on:
+      - ollama
+    networks:
+      - medsync-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    command: >
+      sh -c "
+        pip install -e . &&
+        python -m medsync_ai.api.server
+      "
+
+  # =========================================================================
+  # MEDSYNC AI FRONTEND SERVICE (STREAMLIT)
+  # =========================================================================
+  medsync-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: medsync-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_CLIENT_LOGGER_LEVEL=info
+      - API_BASE_URL=http://medsync-backend:8000
+    volumes:
+      - ./data:/app/data:ro
+      - ./frontend:/app/frontend
+    depends_on:
+      medsync-backend:
+        condition: service_healthy
+    networks:
+      - medsync-network
+    restart: unless-stopped
+    command: >
+      sh -c "
+        pip install -r requirements.txt &&
+        streamlit run main.py
+      "
+
+  # =========================================================================
+  # OLLAMA LLM SERVICE
+  # =========================================================================
+  ollama:
+    image: ollama/ollama:latest
+    container_name: medsync-ollama
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    volumes:
+      - ollama-data:/root/.ollama
+    networks:
+      - medsync-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  medsync-chromadb:
+    driver: local
+  ollama-data:
+    driver: local
+
+networks:
+  medsync-network:
+    driver: bridge

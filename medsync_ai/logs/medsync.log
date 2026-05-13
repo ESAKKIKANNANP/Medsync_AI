@@ -1,0 +1,2014 @@
+2026-02-23 15:36:17,389 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 15:36:17,389 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 15:36:17,389 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Frame sample_frame_001: Identified 3 instruments
+2026-02-23 15:36:17,389 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Frame sample_frame_001: Identified 3 anatomical structures
+2026-02-23 15:36:39,284 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 15:36:39,284 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 15:36:39,284 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Frame sample_frame_001: Identified 3 instruments
+2026-02-23 15:36:39,284 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Frame sample_frame_001: Identified 3 anatomical structures
+2026-02-23 15:36:39,286 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-23 15:36:39,286 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-23 15:36:39,286 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-23 16:10:03,774 - __main__ - INFO - ============================================================
+2026-02-23 16:10:03,775 - __main__ - INFO - MedSync AI - Multi-Modal Surgical Intelligence Framework
+2026-02-23 16:10:03,775 - __main__ - INFO - ============================================================
+2026-02-23 16:10:03,775 - __main__ - INFO - ============================================================
+2026-02-23 16:10:03,775 - __main__ - INFO - Initializing MedSync AI Orchestrator
+2026-02-23 16:10:03,775 - __main__ - INFO - ============================================================
+2026-02-23 16:10:04,811 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: nomic-embed-text
+2026-02-23 16:10:52,272 - __main__ - INFO - ============================================================
+2026-02-23 16:10:52,272 - __main__ - INFO - MedSync AI - Multi-Modal Surgical Intelligence Framework
+2026-02-23 16:10:52,272 - __main__ - INFO - ============================================================
+2026-02-23 16:10:52,272 - __main__ - INFO - ============================================================
+2026-02-23 16:10:52,272 - __main__ - INFO - Initializing MedSync AI Orchestrator
+2026-02-23 16:10:52,272 - __main__ - INFO - ============================================================
+2026-02-23 16:10:52,346 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-23 16:11:00,487 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-23 16:11:00,494 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-23 16:11:00,494 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-23 16:11:00,494 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-23 16:11:00,494 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-23 16:11:00,495 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 16:11:00,495 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 16:11:00,495 - __main__ - INFO - MedSync AI Orchestrator ready
+2026-02-23 16:11:00,495 - __main__ - INFO - 
+[PHASE 1] Ingesting and preparing data...
+2026-02-23 16:11:00,495 - __main__ - INFO - Starting data ingestion and preparation...
+2026-02-23 16:11:00,495 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:11:00,495 - medsync_ai.data_pipeline.ingestion - INFO - MedSync AI - Data Ingestion Pipeline Started
+2026-02-23 16:11:00,495 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:11:00,495 - medsync_ai.data_pipeline.ingestion - INFO - Starting clinical data ingestion...
+2026-02-23 16:11:00,499 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 100 patient records
+2026-02-23 16:11:00,503 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 100 rows, 6 columns
+2026-02-23 16:11:00,504 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 275 admission records
+2026-02-23 16:11:00,506 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 4506 diagnosis records
+2026-02-23 16:11:00,506 - medsync_ai.data_pipeline.ingestion - WARNING - Lab events file not found: /Users/dhanavijayan/Documents/MedSync copy/data/mimic-iv-clinical-database-demo-2.2/icu/labevents.csv
+2026-02-23 16:11:00,506 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 0 rows, 0 columns
+2026-02-23 16:11:00,529 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 18087 prescription records
+2026-02-23 16:11:00,530 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 722 procedure records
+2026-02-23 16:11:00,530 - medsync_ai.data_pipeline.ingestion - INFO - Clinical data ingestion completed
+2026-02-23 16:11:00,530 - medsync_ai.data_pipeline.ingestion - INFO - Starting surgical data ingestion...
+2026-02-23 16:11:00,532 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 0 training and 0 validation VQLA labels
+2026-02-23 16:11:00,609 - medsync_ai.data_pipeline.ingestion - INFO - Found 1800 images in train split
+2026-02-23 16:11:00,611 - medsync_ai.data_pipeline.ingestion - INFO - Found 1200 images in val split
+2026-02-23 16:11:00,611 - medsync_ai.data_pipeline.ingestion - INFO - Surgical data ingestion completed
+2026-02-23 16:11:00,611 - medsync_ai.data_pipeline.ingestion - INFO - Starting reasoning data ingestion...
+2026-02-23 16:11:00,869 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 19704 Medical-o1 training examples
+2026-02-23 16:11:00,870 - medsync_ai.data_pipeline.ingestion - INFO - Reasoning data ingestion completed
+2026-02-23 16:11:00,870 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:11:00,870 - medsync_ai.data_pipeline.ingestion - INFO - Data Ingestion Pipeline Completed Successfully
+2026-02-23 16:11:00,870 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:11:00,872 - medsync_ai.vector_db.vector_db - INFO - Ingesting 200 clinical documents...
+2026-02-23 16:11:05,238 - medsync_ai.vector_db.vector_db - INFO - Ingested 200 clinical documents
+2026-02-23 16:11:05,238 - __main__ - INFO - Ingested 200 clinical documents
+2026-02-23 16:11:05,238 - medsync_ai.vector_db.vector_db - INFO - Ingesting 100 surgical documents...
+2026-02-23 16:11:06,090 - medsync_ai.vector_db.vector_db - INFO - Ingested 100 surgical documents
+2026-02-23 16:11:06,090 - __main__ - INFO - Ingested 100 surgical reasoning documents
+2026-02-23 16:11:06,090 - __main__ - INFO - Data ingestion and preparation completed successfully
+2026-02-23 16:11:06,090 - __main__ - INFO - 
+[PHASE 2] Demonstrating RAG Engine...
+2026-02-23 16:11:06,090 - __main__ - INFO - Demonstrating RAG Engine...
+2026-02-23 16:11:06,090 - __main__ - INFO - Query: What are the risks of hemorrhaging during this step?
+2026-02-23 16:11:06,090 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What are the risks of hemorrhaging during this step?
+2026-02-23 16:14:23,716 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 16:14:23,716 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 16:14:23,716 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Frame sample_frame_001: Identified 3 instruments
+2026-02-23 16:14:23,716 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Frame sample_frame_001: Identified 3 anatomical structures
+2026-02-23 16:14:23,717 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-23 16:14:23,717 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-23 16:14:23,717 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-23 16:15:56,057 - medsync_ai.main - INFO - ============================================================
+2026-02-23 16:15:56,057 - medsync_ai.main - INFO - Initializing MedSync AI Orchestrator
+2026-02-23 16:15:56,057 - medsync_ai.main - INFO - ============================================================
+2026-02-23 16:15:56,122 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-23 16:16:00,337 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-23 16:16:00,339 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-23 16:16:00,339 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-23 16:16:00,339 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-23 16:16:00,339 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-23 16:16:00,339 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 16:16:00,339 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 16:16:00,339 - medsync_ai.main - INFO - MedSync AI Orchestrator ready
+2026-02-23 16:16:00,339 - medsync_ai.main - INFO - Starting data ingestion and preparation...
+2026-02-23 16:16:00,340 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:16:00,340 - medsync_ai.data_pipeline.ingestion - INFO - MedSync AI - Data Ingestion Pipeline Started
+2026-02-23 16:16:00,340 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:16:00,340 - medsync_ai.data_pipeline.ingestion - INFO - Starting clinical data ingestion...
+2026-02-23 16:16:00,341 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 100 patient records
+2026-02-23 16:16:00,343 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 100 rows, 6 columns
+2026-02-23 16:16:00,344 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 275 admission records
+2026-02-23 16:16:00,346 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 4506 diagnosis records
+2026-02-23 16:16:00,346 - medsync_ai.data_pipeline.ingestion - WARNING - Lab events file not found: /Users/dhanavijayan/Documents/MedSync copy/data/mimic-iv-clinical-database-demo-2.2/icu/labevents.csv
+2026-02-23 16:16:00,346 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 0 rows, 0 columns
+2026-02-23 16:16:00,375 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 18087 prescription records
+2026-02-23 16:16:00,376 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 722 procedure records
+2026-02-23 16:16:00,376 - medsync_ai.data_pipeline.ingestion - INFO - Clinical data ingestion completed
+2026-02-23 16:16:00,376 - medsync_ai.data_pipeline.ingestion - INFO - Starting surgical data ingestion...
+2026-02-23 16:16:00,378 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 0 training and 0 validation VQLA labels
+2026-02-23 16:16:00,464 - medsync_ai.data_pipeline.ingestion - INFO - Found 1800 images in train split
+2026-02-23 16:16:00,465 - medsync_ai.data_pipeline.ingestion - INFO - Found 1200 images in val split
+2026-02-23 16:16:00,465 - medsync_ai.data_pipeline.ingestion - INFO - Surgical data ingestion completed
+2026-02-23 16:16:00,465 - medsync_ai.data_pipeline.ingestion - INFO - Starting reasoning data ingestion...
+2026-02-23 16:16:00,712 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 19704 Medical-o1 training examples
+2026-02-23 16:16:00,712 - medsync_ai.data_pipeline.ingestion - INFO - Reasoning data ingestion completed
+2026-02-23 16:16:00,712 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:16:00,712 - medsync_ai.data_pipeline.ingestion - INFO - Data Ingestion Pipeline Completed Successfully
+2026-02-23 16:16:00,712 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-23 16:16:00,715 - medsync_ai.vector_db.vector_db - INFO - Ingesting 200 clinical documents...
+2026-02-23 16:16:02,253 - medsync_ai.vector_db.vector_db - INFO - Ingested 200 clinical documents
+2026-02-23 16:16:02,253 - medsync_ai.main - INFO - Ingested 200 clinical documents
+2026-02-23 16:16:02,253 - medsync_ai.vector_db.vector_db - INFO - Ingesting 100 surgical documents...
+2026-02-23 16:16:02,727 - medsync_ai.vector_db.vector_db - INFO - Ingested 100 surgical documents
+2026-02-23 16:16:02,727 - medsync_ai.main - INFO - Ingested 100 surgical reasoning documents
+2026-02-23 16:16:02,727 - medsync_ai.main - INFO - Data ingestion and preparation completed successfully
+2026-02-23 16:18:02,852 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What are the specific hemorrhage risks in this patient during the dissection phase?
+2026-02-23 16:18:03,037 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-23 16:18:03,037 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-23 16:18:03,037 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: Is anticoagulation a contraindication for this procedure?
+2026-02-23 16:18:03,221 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-23 16:18:03,221 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-23 16:18:03,222 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What instruments should be prepared for optimal hemostasis?
+2026-02-23 16:18:03,407 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-23 16:18:03,407 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-23 16:18:03,407 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-23 16:18:03,407 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-23 16:18:03,407 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-23 16:18:03,408 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 16:18:03,408 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 16:18:03,408 - medsync_ai.main - INFO - ============================================================
+2026-02-23 16:18:03,408 - medsync_ai.main - INFO - Initializing MedSync AI Orchestrator
+2026-02-23 16:18:03,408 - medsync_ai.main - INFO - ============================================================
+2026-02-23 16:18:03,408 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-23 16:18:07,447 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-23 16:18:07,449 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-23 16:18:07,449 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-23 16:18:07,449 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-23 16:18:07,449 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-23 16:18:07,449 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 16:18:07,449 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 16:18:07,449 - medsync_ai.main - INFO - MedSync AI Orchestrator ready
+2026-02-23 16:18:07,449 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-23 16:18:07,449 - medsync_ai.surgical_roadmap.roadmap - WARNING - Alert: [HIGH] anesthetic - Anesthetic adverse reaction risk
+2026-02-23 16:18:07,449 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-23 16:18:07,449 - medsync_ai.surgical_roadmap.roadmap - WARNING - Alert: [HIGH] anesthetic - Anesthetic adverse reaction risk
+2026-02-23 16:18:07,449 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-23 16:19:27,606 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-23 16:19:31,766 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-23 16:19:31,768 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-23 16:19:31,768 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-23 16:19:31,768 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-23 16:19:31,768 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-23 16:19:31,768 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-23 16:19:31,768 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-23 16:19:31,772 - __main__ - INFO - MedSync API initialized
+2026-02-23 16:19:32,218 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 08:44:11,255 - __main__ - INFO - ============================================================
+2026-02-24 08:44:11,255 - __main__ - INFO - MedSync AI - Multi-Modal Surgical Intelligence Framework
+2026-02-24 08:44:11,255 - __main__ - INFO - ============================================================
+2026-02-24 08:44:11,255 - __main__ - INFO - ============================================================
+2026-02-24 08:44:11,255 - __main__ - INFO - Initializing MedSync AI Orchestrator
+2026-02-24 08:44:11,255 - __main__ - INFO - ============================================================
+2026-02-24 08:44:11,341 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 08:44:42,512 - __main__ - INFO - ============================================================
+2026-02-24 08:44:42,512 - __main__ - INFO - MedSync AI - Multi-Modal Surgical Intelligence Framework
+2026-02-24 08:44:42,512 - __main__ - INFO - ============================================================
+2026-02-24 08:44:42,512 - __main__ - INFO - ============================================================
+2026-02-24 08:44:42,512 - __main__ - INFO - Initializing MedSync AI Orchestrator
+2026-02-24 08:44:42,512 - __main__ - INFO - ============================================================
+2026-02-24 08:44:42,559 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 08:44:46,759 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 08:44:46,771 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 08:44:46,771 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 08:44:46,771 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-24 08:44:46,771 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 08:44:46,771 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 08:44:46,771 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 08:44:46,772 - __main__ - INFO - MedSync AI Orchestrator ready
+2026-02-24 08:44:46,772 - __main__ - INFO - 
+[PHASE 1] Ingesting and preparing data...
+2026-02-24 08:44:46,772 - __main__ - INFO - Starting data ingestion and preparation...
+2026-02-24 08:44:46,772 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 08:44:46,772 - medsync_ai.data_pipeline.ingestion - INFO - MedSync AI - Data Ingestion Pipeline Started
+2026-02-24 08:44:46,772 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 08:44:46,772 - medsync_ai.data_pipeline.ingestion - INFO - Starting clinical data ingestion...
+2026-02-24 08:44:46,777 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 100 patient records
+2026-02-24 08:44:46,782 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 100 rows, 6 columns
+2026-02-24 08:44:46,784 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 275 admission records
+2026-02-24 08:44:46,786 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 4506 diagnosis records
+2026-02-24 08:44:46,786 - medsync_ai.data_pipeline.ingestion - WARNING - Lab events file not found: /Users/dhanavijayan/Documents/MedSync copy/data/mimic-iv-clinical-database-demo-2.2/icu/labevents.csv
+2026-02-24 08:44:46,787 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 0 rows, 0 columns
+2026-02-24 08:44:46,812 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 18087 prescription records
+2026-02-24 08:44:46,813 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 722 procedure records
+2026-02-24 08:44:46,813 - medsync_ai.data_pipeline.ingestion - INFO - Clinical data ingestion completed
+2026-02-24 08:44:46,813 - medsync_ai.data_pipeline.ingestion - INFO - Starting surgical data ingestion...
+2026-02-24 08:44:46,815 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 0 training and 0 validation VQLA labels
+2026-02-24 08:44:46,889 - medsync_ai.data_pipeline.ingestion - INFO - Found 1800 images in train split
+2026-02-24 08:44:46,890 - medsync_ai.data_pipeline.ingestion - INFO - Found 1200 images in val split
+2026-02-24 08:44:46,890 - medsync_ai.data_pipeline.ingestion - INFO - Surgical data ingestion completed
+2026-02-24 08:44:46,890 - medsync_ai.data_pipeline.ingestion - INFO - Starting reasoning data ingestion...
+2026-02-24 08:44:47,199 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 19704 Medical-o1 training examples
+2026-02-24 08:44:47,199 - medsync_ai.data_pipeline.ingestion - INFO - Reasoning data ingestion completed
+2026-02-24 08:44:47,199 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 08:44:47,199 - medsync_ai.data_pipeline.ingestion - INFO - Data Ingestion Pipeline Completed Successfully
+2026-02-24 08:44:47,199 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 08:44:47,202 - medsync_ai.vector_db.vector_db - INFO - Ingesting 200 clinical documents...
+2026-02-24 08:44:48,934 - medsync_ai.vector_db.vector_db - INFO - Ingested 200 clinical documents
+2026-02-24 08:44:48,934 - __main__ - INFO - Ingested 200 clinical documents
+2026-02-24 08:44:48,934 - medsync_ai.vector_db.vector_db - INFO - Ingesting 100 surgical documents...
+2026-02-24 08:44:49,446 - medsync_ai.vector_db.vector_db - INFO - Ingested 100 surgical documents
+2026-02-24 08:44:49,446 - __main__ - INFO - Ingested 100 surgical reasoning documents
+2026-02-24 08:44:49,446 - __main__ - INFO - Data ingestion and preparation completed successfully
+2026-02-24 08:44:49,446 - __main__ - INFO - 
+[PHASE 2] Demonstrating RAG Engine...
+2026-02-24 08:44:49,446 - __main__ - INFO - Demonstrating RAG Engine...
+2026-02-24 08:44:49,446 - __main__ - INFO - Query: What are the risks of hemorrhaging during this step?
+2026-02-24 08:44:49,446 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What are the risks of hemorrhaging during this step?
+2026-02-24 08:44:49,736 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-24 08:44:49,736 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 08:44:49,736 - __main__ - INFO - Response: Error: Unable to generate response - HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port...
+2026-02-24 08:44:49,736 - __main__ - INFO - Query: Is the patient on any anticoagulant medications?
+2026-02-24 08:44:49,736 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: Is the patient on any anticoagulant medications?
+2026-02-24 08:44:49,925 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-24 08:44:49,925 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 08:44:49,925 - __main__ - INFO - Response: Error: Unable to generate response - HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port...
+2026-02-24 08:44:49,925 - __main__ - INFO - Query: What surgical instruments should be available for the main dissection phase?
+2026-02-24 08:44:49,925 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What surgical instruments should be available for the main dissection phase?
+2026-02-24 08:44:50,115 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-24 08:44:50,115 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 08:44:50,115 - __main__ - INFO - Response: Error: Unable to generate response - HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port...
+2026-02-24 08:44:50,115 - __main__ - INFO - 
+[PHASE 3] Demonstrating Surgical Roadmap...
+2026-02-24 08:44:50,115 - __main__ - INFO - Demonstrating Surgical Roadmap for cholecystectomy...
+2026-02-24 08:44:50,115 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-24 08:44:50,115 - __main__ - INFO - Step 1: Patient positioning and prepping
+2026-02-24 08:44:50,115 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-24 08:44:50,115 - __main__ - INFO - Step 2: Trocar placement and port establishment
+2026-02-24 08:44:50,115 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-24 08:44:50,115 - __main__ - INFO - Step 3: Calot's triangle dissection and identification
+2026-02-24 08:44:50,115 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 3: Cystic artery and duct ligation
+2026-02-24 08:44:50,115 - __main__ - INFO - 
+[PHASE 4] System Status...
+2026-02-24 08:44:50,116 - __main__ - INFO - 
+============================================================
+2026-02-24 08:44:50,116 - __main__ - INFO - MedSync AI Prototype Setup Complete!
+2026-02-24 08:44:50,116 - __main__ - INFO - Run 'python -m medsync_ai.api.server' to start the API
+2026-02-24 08:44:50,116 - __main__ - INFO - ============================================================
+2026-02-24 08:45:23,860 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 08:45:28,370 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 08:45:28,373 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 08:45:28,373 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 08:45:28,373 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-24 08:45:28,373 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 08:45:28,373 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 08:45:28,373 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 08:45:28,377 - __main__ - INFO - MedSync API initialized
+2026-02-24 08:45:28,395 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 10:48:11,443 - __main__ - INFO - Patient registered: p001
+2026-02-24 10:49:16,854 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: what is probability of operation risk
+2026-02-24 10:49:17,136 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-02-24 10:49:17,136 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.35, Anesthetic=0.20
+2026-02-24 11:46:06,166 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 11:46:10,475 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 11:46:10,478 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 11:46:10,478 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 11:46:10,478 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-24 11:46:10,478 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 11:46:10,478 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 11:46:10,478 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 11:46:10,484 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 11:46:16,912 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 11:46:21,043 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 11:46:21,046 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 11:46:21,046 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 11:46:21,046 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: openhermes2.5 at http://localhost:11434
+2026-02-24 11:46:21,046 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 11:46:21,046 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 11:46:21,046 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 11:46:21,049 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 11:51:14,799 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 11:51:19,135 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 11:51:19,137 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 11:51:19,137 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 11:51:19,137 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 11:51:19,137 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 11:51:19,137 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 11:51:19,138 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 11:51:19,142 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 12:13:32,629 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 12:13:37,062 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 12:13:37,064 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 12:13:37,064 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 12:13:37,064 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 12:13:37,064 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 12:13:37,064 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 12:13:37,064 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 12:13:37,067 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 12:17:33,497 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT PROFILE:
+- Age: 50 years
+- BP: 120/80 mmHg
+- Blood Sugar: 140 mg/dL
+- Height: 170.0cm | Weight: 70.0kg
+- Previous Operations: appendix 2025
+- Chronic Conditions: Diabetes
+- Medications: Aspirin
+- Scans Uploaded: 0 files
+
+
+CURRENT PHASE: Answer with focus on clinical assessment and risk factors.
+
+SURGEON'S QUESTION: about patient history
+
+Respond as a senior surgical consultant. Be precise, collegial, and actionable. Under 250 words.
+2026-02-24 12:18:03,894 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM API error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+2026-02-24 12:18:03,940 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-24 12:22:51,659 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 12:23:05,053 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 12:23:05,061 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 12:23:05,061 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 12:23:05,061 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 12:23:05,061 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 12:23:05,061 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 12:23:05,061 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 12:23:05,064 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 12:23:33,812 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What are the hemorrhage risks for a 50-year-old patient?
+2026-02-24 12:23:34,133 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying LLM: gpt-oss:20b
+2026-02-24 12:25:35,512 - medsync_ai.rag_engine.surgeon_doubt - ERROR - LLM request timed out after 120s. Model: gpt-oss:20b
+2026-02-24 12:25:35,544 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-24 12:25:44,543 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 12:26:03,275 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 12:26:03,294 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 12:26:03,294 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 12:26:03,294 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 12:26:03,294 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 12:26:03,294 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 12:26:03,294 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 12:26:03,297 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 12:26:07,059 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 12:26:11,835 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 12:26:11,838 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 12:26:11,838 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 12:26:11,839 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 12:26:11,839 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 12:26:11,839 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 12:26:11,839 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 12:26:11,842 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 12:26:14,674 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 12:26:19,219 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 12:26:19,224 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 12:26:19,224 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 12:26:19,224 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 12:26:19,224 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 12:26:19,224 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 12:26:19,224 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 12:26:19,233 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 12:26:46,407 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 12:26:50,657 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 12:26:50,660 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 12:26:50,660 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 12:26:50,660 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 12:26:50,660 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 12:26:50,660 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 12:26:50,660 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 12:26:50,664 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 15:06:28,031 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:06:32,747 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:06:32,755 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:06:32,755 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:06:32,756 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized LLM client: gpt-oss:20b at http://localhost:11434
+2026-02-24 15:06:32,756 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:06:32,756 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:06:32,756 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:06:32,759 - __main__ - INFO - MedSync API initialized
+2026-02-24 15:06:32,775 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 15:06:43,457 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:06:53,701 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:06:54,733 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:09,063 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:12,385 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:33,198 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:38,262 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:48,927 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:48,929 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:07:58,187 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:08:14,539 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:08:29,491 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:08:36,052 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:08:58,301 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:09:22,781 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT PROFILE:
+- Age: 50 years
+- BP: 125/75 mmHg
+- Blood Sugar: 190 mg/dL
+- Height: 178.08cm | Weight: 50.0kg | BMI: 15.8
+- Previous Operations: Appendix operation in 2025
+- Chronic Conditions: Yes , he had Diabetes
+- Medications: None
+- Scans Uploaded: 0 files
+
+RISK ASSESSMENT:
+- Hemorrhage Risk: 0%
+- Anesthetic Reaction Risk: 10%
+
+SCAN FINDINGS:
+No scans uploaded yet.
+
+PREVIOUS ASSESSMENT:
+Awaiting assessment phase completion.
+
+PHASE GUIDANCE:
+You are a senior surgical consultant providing INITIAL CLINICAL ASSESSMENT. 
+Focus on: patient risk profile, key findings from imaging, success rate estimation, and pre-operative optimization.
+Be thorough but concise. Acknowledge what you've learned from the scans.
+
+SURGEON'S QUESTION: tell me about the patient current body condition
+
+Respond as a senior surgeon to a colleague. Be precise, collegial, actionable, and practical. Under 250 words.
+2026-02-24 15:09:23,086 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying LLM: gpt-oss:20b
+2026-02-24 15:10:23,208 - medsync_ai.rag_engine.surgeon_doubt - WARNING - LLM request timed out (model: gpt-oss:20b). Using fallback response.
+2026-02-24 15:10:23,219 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-24 15:10:23,620 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:10:26,261 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:16:27,613 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:16:33,856 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ LLM available at http://localhost:11434
+2026-02-24 15:26:16,770 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:26:20,729 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:26:20,734 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:26:20,734 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:27:51,642 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:27:55,817 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:27:55,820 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:27:55,820 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:29:39,377 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:29:43,299 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:29:43,302 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:29:43,302 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:29:43,303 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:29:43,303 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:29:43,303 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:29:43,303 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:29:43,307 - __main__ - INFO - MedSync API initialized
+2026-02-24 15:29:43,323 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 15:32:07,752 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:32:11,982 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:32:11,985 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:32:11,985 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:32:11,985 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:32:11,985 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:32:11,985 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:32:11,985 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:32:11,989 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 15:32:11,989 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:32:11,989 - medsync_ai.main - INFO - MedSync AI - Multi-Modal Surgical Intelligence Framework
+2026-02-24 15:32:11,989 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:32:11,989 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:32:11,989 - medsync_ai.main - INFO - Initializing MedSync AI Orchestrator
+2026-02-24 15:32:11,989 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:32:11,991 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:32:15,987 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:32:15,989 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:32:15,989 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:32:15,989 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:32:15,989 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:32:15,989 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:32:15,989 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:32:15,989 - medsync_ai.main - INFO - MedSync AI Orchestrator ready
+2026-02-24 15:32:15,989 - medsync_ai.main - INFO - 
+[PHASE 1] Ingesting and preparing data...
+2026-02-24 15:32:15,989 - medsync_ai.main - INFO - Starting data ingestion and preparation...
+2026-02-24 15:32:15,989 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:32:15,990 - medsync_ai.data_pipeline.ingestion - INFO - MedSync AI - Data Ingestion Pipeline Started
+2026-02-24 15:32:15,990 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:32:15,990 - medsync_ai.data_pipeline.ingestion - INFO - Starting clinical data ingestion...
+2026-02-24 15:32:15,994 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 100 patient records
+2026-02-24 15:32:15,997 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 100 rows, 6 columns
+2026-02-24 15:32:15,999 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 275 admission records
+2026-02-24 15:32:16,001 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 4506 diagnosis records
+2026-02-24 15:32:16,001 - medsync_ai.data_pipeline.ingestion - WARNING - Lab events file not found: /Users/dhanavijayan/Documents/MedSync copy/data/mimic-iv-clinical-database-demo-2.2/icu/labevents.csv
+2026-02-24 15:32:16,002 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 0 rows, 0 columns
+2026-02-24 15:32:16,027 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 18087 prescription records
+2026-02-24 15:32:16,028 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 722 procedure records
+2026-02-24 15:32:16,028 - medsync_ai.data_pipeline.ingestion - INFO - Clinical data ingestion completed
+2026-02-24 15:32:16,028 - medsync_ai.data_pipeline.ingestion - INFO - Starting surgical data ingestion...
+2026-02-24 15:32:16,030 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 0 training and 0 validation VQLA labels
+2026-02-24 15:32:16,032 - medsync_ai.data_pipeline.ingestion - INFO - Found 1800 images in train split
+2026-02-24 15:32:16,034 - medsync_ai.data_pipeline.ingestion - INFO - Found 1200 images in val split
+2026-02-24 15:32:16,034 - medsync_ai.data_pipeline.ingestion - INFO - Surgical data ingestion completed
+2026-02-24 15:32:16,034 - medsync_ai.data_pipeline.ingestion - INFO - Starting reasoning data ingestion...
+2026-02-24 15:32:16,333 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 19704 Medical-o1 training examples
+2026-02-24 15:32:16,333 - medsync_ai.data_pipeline.ingestion - INFO - Reasoning data ingestion completed
+2026-02-24 15:32:16,333 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:32:16,333 - medsync_ai.data_pipeline.ingestion - INFO - Data Ingestion Pipeline Completed Successfully
+2026-02-24 15:32:16,333 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:32:16,335 - medsync_ai.vector_db.vector_db - INFO - Ingesting 200 clinical documents...
+2026-02-24 15:32:18,137 - medsync_ai.vector_db.vector_db - INFO - Ingested 200 clinical documents
+2026-02-24 15:32:18,137 - medsync_ai.main - INFO - Ingested 200 clinical documents
+2026-02-24 15:32:18,137 - medsync_ai.vector_db.vector_db - INFO - Ingesting 100 surgical documents...
+2026-02-24 15:32:18,721 - medsync_ai.vector_db.vector_db - INFO - Ingested 100 surgical documents
+2026-02-24 15:32:18,721 - medsync_ai.main - INFO - Ingested 100 surgical reasoning documents
+2026-02-24 15:32:18,721 - medsync_ai.main - INFO - Data ingestion and preparation completed successfully
+2026-02-24 15:32:18,721 - medsync_ai.main - INFO - 
+[PHASE 2] Demonstrating RAG Engine...
+2026-02-24 15:32:18,721 - medsync_ai.main - INFO - Demonstrating RAG Engine...
+2026-02-24 15:32:18,721 - medsync_ai.main - INFO - Query: What are the risks of hemorrhaging during this step?
+2026-02-24 15:32:18,721 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What are the risks of hemorrhaging during this step?
+2026-02-24 15:32:19,047 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:32:19,409 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:32:19,409 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 15:32:19,409 - medsync_ai.main - INFO - Response: Error generating response: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their s...
+2026-02-24 15:32:19,409 - medsync_ai.main - INFO - Query: Is the patient on any anticoagulant medications?
+2026-02-24 15:32:19,409 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: Is the patient on any anticoagulant medications?
+2026-02-24 15:32:19,654 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:32:19,773 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:32:19,773 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 15:32:19,773 - medsync_ai.main - INFO - Response: Error generating response: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their s...
+2026-02-24 15:32:19,773 - medsync_ai.main - INFO - Query: What surgical instruments should be available for the main dissection phase?
+2026-02-24 15:32:19,773 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What surgical instruments should be available for the main dissection phase?
+2026-02-24 15:32:19,989 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:32:20,106 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:32:20,106 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 15:32:20,106 - medsync_ai.main - INFO - Response: Error generating response: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their s...
+2026-02-24 15:32:20,107 - medsync_ai.main - INFO - 
+[PHASE 3] Demonstrating Surgical Roadmap...
+2026-02-24 15:32:20,107 - medsync_ai.main - INFO - Demonstrating Surgical Roadmap for cholecystectomy...
+2026-02-24 15:32:20,107 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-24 15:32:20,107 - medsync_ai.main - INFO - Step 1: Patient positioning and prepping
+2026-02-24 15:32:20,107 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-24 15:32:20,107 - medsync_ai.main - INFO - Step 2: Trocar placement and port establishment
+2026-02-24 15:32:20,107 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-24 15:32:20,107 - medsync_ai.main - INFO - Step 3: Calot's triangle dissection and identification
+2026-02-24 15:32:20,107 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 3: Cystic artery and duct ligation
+2026-02-24 15:32:20,107 - medsync_ai.main - INFO - 
+[PHASE 4] System Status...
+2026-02-24 15:32:20,108 - medsync_ai.main - INFO - 
+============================================================
+2026-02-24 15:32:20,108 - medsync_ai.main - INFO - MedSync AI Prototype Setup Complete!
+2026-02-24 15:32:20,108 - medsync_ai.main - INFO - Run 'python -m medsync_ai.api.server' to start the API
+2026-02-24 15:32:20,108 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:48:59,537 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:49:03,702 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:49:03,705 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:49:03,705 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:49:03,705 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:49:03,705 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:49:03,705 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:49:03,705 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:49:03,709 - medsync_ai.api.server - INFO - MedSync API initialized
+2026-02-24 15:49:03,709 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:49:03,709 - medsync_ai.main - INFO - MedSync AI - Multi-Modal Surgical Intelligence Framework
+2026-02-24 15:49:03,709 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:49:03,709 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:49:03,709 - medsync_ai.main - INFO - Initializing MedSync AI Orchestrator
+2026-02-24 15:49:03,709 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:49:03,710 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:49:07,772 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:49:07,774 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:49:07,774 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:49:07,774 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:49:07,774 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:49:07,774 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:49:07,774 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:49:07,774 - medsync_ai.main - INFO - MedSync AI Orchestrator ready
+2026-02-24 15:49:07,774 - medsync_ai.main - INFO - 
+[PHASE 1] Ingesting and preparing data...
+2026-02-24 15:49:07,774 - medsync_ai.main - INFO - Starting data ingestion and preparation...
+2026-02-24 15:49:07,775 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:49:07,775 - medsync_ai.data_pipeline.ingestion - INFO - MedSync AI - Data Ingestion Pipeline Started
+2026-02-24 15:49:07,775 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:49:07,775 - medsync_ai.data_pipeline.ingestion - INFO - Starting clinical data ingestion...
+2026-02-24 15:49:07,778 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 100 patient records
+2026-02-24 15:49:07,779 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 100 rows, 6 columns
+2026-02-24 15:49:07,781 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 275 admission records
+2026-02-24 15:49:07,783 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 4506 diagnosis records
+2026-02-24 15:49:07,783 - medsync_ai.data_pipeline.ingestion - WARNING - Lab events file not found: /Users/dhanavijayan/Documents/MedSync copy/data/mimic-iv-clinical-database-demo-2.2/icu/labevents.csv
+2026-02-24 15:49:07,784 - medsync_ai.data_pipeline.ingestion - INFO - Cleaned dataframe: 0 rows, 0 columns
+2026-02-24 15:49:07,811 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 18087 prescription records
+2026-02-24 15:49:07,812 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 722 procedure records
+2026-02-24 15:49:07,812 - medsync_ai.data_pipeline.ingestion - INFO - Clinical data ingestion completed
+2026-02-24 15:49:07,812 - medsync_ai.data_pipeline.ingestion - INFO - Starting surgical data ingestion...
+2026-02-24 15:49:07,831 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 0 training and 0 validation VQLA labels
+2026-02-24 15:49:07,833 - medsync_ai.data_pipeline.ingestion - INFO - Found 1800 images in train split
+2026-02-24 15:49:07,835 - medsync_ai.data_pipeline.ingestion - INFO - Found 1200 images in val split
+2026-02-24 15:49:07,835 - medsync_ai.data_pipeline.ingestion - INFO - Surgical data ingestion completed
+2026-02-24 15:49:07,835 - medsync_ai.data_pipeline.ingestion - INFO - Starting reasoning data ingestion...
+2026-02-24 15:49:08,114 - medsync_ai.data_pipeline.ingestion - INFO - Loaded 19704 Medical-o1 training examples
+2026-02-24 15:49:08,114 - medsync_ai.data_pipeline.ingestion - INFO - Reasoning data ingestion completed
+2026-02-24 15:49:08,114 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:49:08,114 - medsync_ai.data_pipeline.ingestion - INFO - Data Ingestion Pipeline Completed Successfully
+2026-02-24 15:49:08,114 - medsync_ai.data_pipeline.ingestion - INFO - ==================================================
+2026-02-24 15:49:08,116 - medsync_ai.vector_db.vector_db - INFO - Ingesting 200 clinical documents...
+2026-02-24 15:49:09,668 - medsync_ai.vector_db.vector_db - INFO - Ingested 200 clinical documents
+2026-02-24 15:49:09,669 - medsync_ai.main - INFO - Ingested 200 clinical documents
+2026-02-24 15:49:09,669 - medsync_ai.vector_db.vector_db - INFO - Ingesting 100 surgical documents...
+2026-02-24 15:49:10,139 - medsync_ai.vector_db.vector_db - INFO - Ingested 100 surgical documents
+2026-02-24 15:49:10,139 - medsync_ai.main - INFO - Ingested 100 surgical reasoning documents
+2026-02-24 15:49:10,139 - medsync_ai.main - INFO - Data ingestion and preparation completed successfully
+2026-02-24 15:49:10,139 - medsync_ai.main - INFO - 
+[PHASE 2] Demonstrating RAG Engine...
+2026-02-24 15:49:10,139 - medsync_ai.main - INFO - Demonstrating RAG Engine...
+2026-02-24 15:49:10,139 - medsync_ai.main - INFO - Query: What are the risks of hemorrhaging during this step?
+2026-02-24 15:49:10,139 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What are the risks of hemorrhaging during this step?
+2026-02-24 15:49:10,383 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:49:10,826 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:49:10,826 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 15:49:10,827 - medsync_ai.main - INFO - Response: Error generating response: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their s...
+2026-02-24 15:49:10,827 - medsync_ai.main - INFO - Query: Is the patient on any anticoagulant medications?
+2026-02-24 15:49:10,827 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: Is the patient on any anticoagulant medications?
+2026-02-24 15:49:11,048 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:49:11,174 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:49:11,174 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 15:49:11,174 - medsync_ai.main - INFO - Response: Error generating response: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their s...
+2026-02-24 15:49:11,174 - medsync_ai.main - INFO - Query: What surgical instruments should be available for the main dissection phase?
+2026-02-24 15:49:11,174 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: What surgical instruments should be available for the main dissection phase?
+2026-02-24 15:49:11,376 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:49:11,483 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:49:11,483 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.50, Anesthetic=0.00
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - Response: Error generating response: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their s...
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - 
+[PHASE 3] Demonstrating Surgical Roadmap...
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - Demonstrating Surgical Roadmap for cholecystectomy...
+2026-02-24 15:49:11,483 - medsync_ai.surgical_roadmap.roadmap - INFO - Surgical Roadmap initialized for cholecystectomy
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - Step 1: Patient positioning and prepping
+2026-02-24 15:49:11,483 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 1: Trocar placement and port establishment
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - Step 2: Trocar placement and port establishment
+2026-02-24 15:49:11,483 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 2: Calot's triangle dissection and identification
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - Step 3: Calot's triangle dissection and identification
+2026-02-24 15:49:11,483 - medsync_ai.surgical_roadmap.roadmap - INFO - Advanced to step 3: Cystic artery and duct ligation
+2026-02-24 15:49:11,483 - medsync_ai.main - INFO - 
+[PHASE 4] System Status...
+2026-02-24 15:49:11,484 - medsync_ai.main - INFO - 
+============================================================
+2026-02-24 15:49:11,484 - medsync_ai.main - INFO - MedSync AI Prototype Setup Complete!
+2026-02-24 15:49:11,484 - medsync_ai.main - INFO - Run 'python -m medsync_ai.api.server' to start the API
+2026-02-24 15:49:11,484 - medsync_ai.main - INFO - ============================================================
+2026-02-24 15:51:24,782 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:51:28,860 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:51:28,862 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:51:28,862 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:51:28,863 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:51:28,863 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:51:28,863 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:51:28,863 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:51:28,866 - __main__ - INFO - MedSync API initialized
+2026-02-24 15:51:28,884 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 15:51:39,349 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:51:43,197 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:51:43,199 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:51:43,199 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:51:43,200 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:51:43,200 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:51:43,200 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:51:43,200 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:51:43,203 - __main__ - INFO - MedSync API initialized
+2026-02-24 15:51:43,218 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 15:52:19,822 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 15:52:23,816 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 15:52:23,819 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 15:52:23,819 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 15:52:23,819 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash-exp
+2026-02-24 15:52:23,819 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 15:52:23,819 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 15:52:23,819 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 15:52:23,823 - __main__ - INFO - MedSync API initialized
+2026-02-24 15:52:23,833 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 15:52:25,319 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:52:55,007 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:53:27,457 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:54:01,441 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:54:24,078 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:55:28,183 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:55:30,642 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:55:37,446 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:55:42,916 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT PROFILE:
+- Age: 50 years
+- BP: 120/80 mmHg
+- Blood Sugar: 100 mg/dL
+- Height: 170.0cm | Weight: 70.0kg | BMI: 24.2
+- Previous Operations: None
+- Chronic Conditions: None
+- Medications: None
+- Scans Uploaded: 0 files
+
+RISK ASSESSMENT:
+- Hemorrhage Risk: 0%
+- Anesthetic Reaction Risk: 0%
+
+SCAN FINDINGS:
+No scans uploaded yet.
+
+PREVIOUS ASSESSMENT:
+Awaiting assessment phase completion.
+
+PHASE GUIDANCE:
+You are a senior surgical consultant providing INITIAL CLINICAL ASSESSMENT. 
+Focus on: patient risk profile, key findings from imaging, success rate estimation, and pre-operative optimization.
+Be thorough but concise. Acknowledge what you've learned from the scans.
+
+SURGEON'S QUESTION: hi
+
+Respond as a senior surgeon to a colleague. Be precise, collegial, actionable, and practical. Under 250 words.
+2026-02-24 15:55:43,214 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash-exp
+2026-02-24 15:55:43,580 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-24 15:55:43,581 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-24 15:55:43,800 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 15:59:14,580 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash-exp accessible
+2026-02-24 16:00:56,557 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-24 16:01:21,614 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-24 16:01:21,617 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-24 16:01:21,617 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-24 16:01:21,617 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash
+2026-02-24 16:01:21,617 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-24 16:01:21,617 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-24 16:01:21,617 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-24 16:01:21,621 - __main__ - INFO - MedSync API initialized
+2026-02-24 16:01:21,635 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-24 16:01:23,848 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash accessible
+2026-02-24 16:01:36,030 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash accessible
+2026-02-24 16:01:43,309 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash accessible
+2026-02-24 16:01:48,378 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT PROFILE:
+- Age: 50 years
+- BP: 120/80 mmHg
+- Blood Sugar: 100 mg/dL
+- Height: 170.0cm | Weight: 70.0kg | BMI: 24.2
+- Previous Operations: None
+- Chronic Conditions: None
+- Medications: None
+- Scans Uploaded: 0 files
+
+RISK ASSESSMENT:
+- Hemorrhage Risk: 0%
+- Anesthetic Reaction Risk: 0%
+
+SCAN FINDINGS:
+No scans uploaded yet.
+
+PREVIOUS ASSESSMENT:
+Awaiting assessment phase completion.
+
+PHASE GUIDANCE:
+You are a senior surgical consultant providing INITIAL CLINICAL ASSESSMENT. 
+Focus on: patient risk profile, key findings from imaging, success rate estimation, and pre-operative optimization.
+Be thorough but concise. Acknowledge what you've learned from the scans.
+
+SURGEON'S QUESTION: hi
+
+Respond as a senior surgeon to a colleague. Be precise, collegial, actionable, and practical. Under 250 words.
+2026-02-24 16:01:48,674 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash
+2026-02-24 16:01:49,000 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 11.011779318s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2026-02-24 16:01:49,001 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-24 16:01:49,134 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash accessible
+2026-02-25 09:36:05,526 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 09:36:09,979 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 09:36:09,983 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 09:36:09,983 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 09:36:09,983 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-1.5-flash
+2026-02-25 09:36:09,983 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 09:36:09,983 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 09:36:09,983 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 09:36:09,986 - __main__ - INFO - MedSync API initialized
+2026-02-25 09:36:10,047 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 09:36:38,552 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 09:36:43,229 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 09:36:43,231 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 09:36:43,231 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 09:36:43,231 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-1.5-flash
+2026-02-25 09:36:43,231 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 09:36:43,231 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 09:36:43,231 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 09:36:43,234 - __main__ - INFO - MedSync API initialized
+2026-02-25 09:36:43,248 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 09:38:17,706 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 09:38:22,456 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 09:38:22,458 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 09:38:22,458 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 09:38:22,458 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-1.5-flash
+2026-02-25 09:38:22,459 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 09:38:22,459 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 09:38:22,459 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 09:38:22,462 - __main__ - INFO - MedSync API initialized
+2026-02-25 09:38:22,473 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 09:39:02,063 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:03,257 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:20,869 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:23,572 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:26,693 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:26,851 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:30,978 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:32,509 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:32,637 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:41,371 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:41,709 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:42,219 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:42,597 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:42,709 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:43,053 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:43,349 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:43,646 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:44,031 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:39:44,307 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:12,315 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:12,519 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:14,326 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:14,498 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:14,701 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:14,899 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:15,061 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:15,316 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:53,735 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:55,249 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:56,299 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:41:56,506 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:52,891 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:56,423 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:57,204 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:57,415 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:57,666 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:57,891 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:58,080 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:58,235 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:58,398 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:45:59,538 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:47:06,100 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 09:47:10,392 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 09:47:10,394 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 09:47:10,394 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 09:47:10,394 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-1.5-flash
+2026-02-25 09:47:10,394 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 09:47:10,394 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 09:47:10,394 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 09:47:10,397 - __main__ - INFO - MedSync API initialized
+2026-02-25 09:47:10,410 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 09:47:26,528 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 09:47:30,880 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 09:47:30,883 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 09:47:30,883 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 09:47:30,883 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-1.5-flash
+2026-02-25 09:47:30,883 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 09:47:30,883 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 09:47:30,883 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 09:47:30,887 - __main__ - INFO - MedSync API initialized
+2026-02-25 09:47:30,901 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 09:47:50,028 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini model gemini-1.5-flash not found in available models
+2026-02-25 09:48:18,916 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 09:48:23,138 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 09:48:23,141 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 09:48:23,141 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 09:48:23,141 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-1.5-flash
+2026-02-25 09:48:23,141 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 09:48:23,141 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 09:48:23,141 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 09:48:23,145 - __main__ - INFO - MedSync API initialized
+2026-02-25 09:48:23,157 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 09:49:10,216 - medsync_ai.rag_engine.surgeon_doubt - WARNING - Gemini availability check failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-02-25 10:45:49,380 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 10:45:53,470 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 10:45:53,472 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 10:45:53,473 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 10:45:53,473 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.0-flash
+2026-02-25 10:45:53,473 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 10:45:53,473 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 10:45:53,473 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 10:45:53,476 - __main__ - INFO - MedSync API initialized
+2026-02-25 10:45:53,490 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 10:46:08,484 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:46:19,772 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:46:28,485 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:46:28,532 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:46:48,476 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:46:53,593 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:49:45,758 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:49:51,695 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:49:51,732 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 10:55:02,877 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 11:07:15,021 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 11:07:20,423 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT PROFILE:
+- Age: 50 years
+- BP: 120/80 mmHg
+- Blood Sugar: 100 mg/dL
+- Height: 170.0cm | Weight: 70.0kg | BMI: 24.2
+- Previous Operations: None
+- Chronic Conditions: None
+- Medications: None
+- Scans Uploaded: 0 files
+
+RISK ASSESSMENT:
+- Hemorrhage Risk: 0%
+- Anesthetic Reaction Risk: 0%
+
+SCAN FINDINGS:
+No scans uploaded yet.
+
+PREVIOUS ASSESSMENT:
+Awaiting assessment phase completion.
+
+PHASE GUIDANCE:
+You are a senior surgical consultant providing INITIAL CLINICAL ASSESSMENT. 
+Focus on: patient risk profile, key findings from imaging, success rate estimation, and pre-operative optimization.
+Be thorough but concise. Acknowledge what you've learned from the scans.
+
+SURGEON'S QUESTION: hi
+
+Respond as a senior surgeon to a colleague. Be precise, collegial, actionable, and practical. Under 250 words.
+2026-02-25 11:07:20,960 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.0-flash
+2026-02-25 11:07:22,003 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 38.015546496s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2026-02-25 11:07:22,005 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:07:22,053 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.0-flash is configured
+2026-02-25 11:08:29,444 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 11:08:33,544 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 11:08:33,546 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 11:08:33,546 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 11:08:33,546 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-25 11:08:33,546 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 11:08:33,546 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 11:08:33,546 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 11:08:33,549 - __main__ - INFO - MedSync API initialized
+2026-02-25 11:08:33,563 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 11:08:50,280 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:09:02,025 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:09:04,796 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:09:08,605 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT PROFILE:
+- Age: 50 years
+- BP: 120/80 mmHg
+- Blood Sugar: 100 mg/dL
+- Height: 170.0cm | Weight: 70.0kg | BMI: 24.2
+- Previous Operations: None
+- Chronic Conditions: None
+- Medications: None
+- Scans Uploaded: 0 files
+
+RISK ASSESSMENT:
+- Hemorrhage Risk: 0%
+- Anesthetic Reaction Risk: 0%
+
+SCAN FINDINGS:
+No scans uploaded yet.
+
+PREVIOUS ASSESSMENT:
+Awaiting assessment phase completion.
+
+PHASE GUIDANCE:
+Provide expert surgical consultation based on the patient context.
+
+SURGEON'S QUESTION: hi
+
+Respond as a senior surgeon to a colleague. Be precise, collegial, actionable, and practical. Under 250 words.
+2026-02-25 11:09:08,874 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:09:15,509 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (968 chars)
+2026-02-25 11:09:15,510 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:09:15,559 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:11:14,516 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:18:37,400 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 11:18:41,657 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 11:18:41,659 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 11:18:41,659 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 11:18:41,659 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-25 11:18:41,659 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 11:18:41,659 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 11:18:41,659 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 11:18:41,662 - __main__ - INFO - MedSync API initialized
+2026-02-25 11:18:41,676 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 11:19:06,173 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:19:13,100 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:21:05,423 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:21:05,989 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:21:05,991 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:21:06,824 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:21:12,833 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:22:35,286 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:25:03,354 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 11:25:07,678 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 11:25:07,681 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 11:25:07,681 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 11:25:07,681 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-25 11:25:07,681 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 11:25:07,681 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 11:25:07,681 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 11:25:07,685 - __main__ - INFO - MedSync API initialized
+2026-02-25 11:25:07,699 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 11:25:25,101 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:25:46,182 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:27:46,424 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:28:03,233 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:28:14,184 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:28:33,996 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:29:09,370 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:29:32,827 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:32:40,551 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:32:52,357 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:32:52,358 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:33:06,702 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:33:08,540 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:33:08,833 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:33:19,255 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (383 chars)
+2026-02-25 11:33:19,256 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:33:19,258 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:33:19,482 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:33:31,791 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (401 chars)
+2026-02-25 11:33:31,792 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:33:31,792 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:33:32,019 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:33:44,890 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (878 chars)
+2026-02-25 11:33:44,890 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:33:44,892 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:33:44,892 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:33:45,116 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:33:56,915 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (470 chars)
+2026-02-25 11:33:56,915 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:33:56,918 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:33:56,918 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:33:57,145 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:34:10,821 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (791 chars)
+2026-02-25 11:34:10,821 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:34:10,822 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:34:11,045 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:34:23,385 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1670 chars)
+2026-02-25 11:34:23,386 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:34:23,389 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 100/66 mmHg
+Blood Sugar: 95 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:34:23,389 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:34:23,612 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:34:34,578 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1803 chars)
+2026-02-25 11:34:34,578 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:34:34,580 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:34:34,623 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:35:16,329 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 11:35:21,421 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 11:35:21,423 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 11:35:21,423 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 11:35:21,423 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-25 11:35:21,423 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 11:35:21,423 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 11:35:21,423 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 11:35:21,427 - __main__ - INFO - MedSync API initialized
+2026-02-25 11:35:21,442 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 11:35:50,535 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:35:53,140 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:36:03,402 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:36:12,662 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:36:12,887 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:36:24,134 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1653 chars)
+2026-02-25 11:36:24,135 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:36:24,137 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:36:24,361 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:36:35,922 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (2448 chars)
+2026-02-25 11:36:35,922 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:36:35,923 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:36:35,925 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:36:35,925 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:36:35,925 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:36:36,137 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:36:46,662 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1938 chars)
+2026-02-25 11:36:46,663 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:36:46,665 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:36:46,707 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:38:10,427 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:38:16,823 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: Test query
+2026-02-25 11:38:17,015 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:38:27,860 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1432 chars)
+2026-02-25 11:38:27,860 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:39:47,659 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:39:47,850 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:39:56,104 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:40:06,931 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:40:21,326 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:40:27,018 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 51 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:40:27,249 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:40:38,067 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (476 chars)
+2026-02-25 11:40:38,068 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:40:38,108 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:41:36,143 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:41:36,163 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 51 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+Dear Colleague,
+
+Thank you for seeking a pre-operative analysis for this patient. I've reviewed the provided clinical profile. It's crucial to highlight several significant data gaps that currently preclude a comprehensive and procedure-specific pre-operative plan. My analysis will therefore focus on the available data, address these critical omissions, and provide general principles for perioperative management, particularly regarding the identified metabolic derangement
+
+Create a detailed surgical roadmap using the CholecT45 framework (for cholecystectomy):
+
+**DETAILED PROCEDURAL ROADMAP**
+- Step 1-2: Positioning & access
+- Step 3-4: Initial exploration & dissection
+- Step 5-6: Critical view of safety achievement
+- Step 7-8: Arterial and duct division
+- Step 9: Specimen extraction and closure
+
+For each step: describe technique, anatomical pearls, specific risks for THIS patient, troubleshooting strategies.
+
+Be surgical and specific.
+2026-02-25 11:41:36,377 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:41:47,473 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (443 chars)
+2026-02-25 11:41:47,474 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:41:47,520 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:42:28,901 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:42:28,972 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:42:29,087 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:42:30,127 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:42:43,172 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:42:46,103 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 45 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 238 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: 
+Medications: None
+Allergies: 
+Comorbidities: None
+
+IMAGING & LABS:
+Scan Findings: 
+Recent Labs: 
+
+As a senior surgical consultant, provide a comprehensive pre-operative analysis. Use a collegial, doc-to-doc tone.
+
+Structure your response with these exact sections:
+
+**1. CURRENT CLINICAL STATUS**
+Summarize the patient's current physical condition based on demographics, vitals, and imaging. Include body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS (if surgery not performed)**
+Explain the medical, anatomical, or functional risks of delaying intervention. What complications could develop? Timeline concerns?
+
+**3. SURGICAL APPROACH & STEPS**
+Outline the planned surgical procedure step-by-step. Include key anatomical landmarks, critical checkpoints, and estimated duration.
+
+**4. INTRA-OPERATIVE RISKS**
+Detail specific risks DURING surgery for THIS patient. Consider hemorrhage, vascular injury, anesthetic complications, organ damage. Quantify where possible.
+
+**5. SUCCESS PROBABILITY**
+Provide estimated success rate (%) with reasoning. Factor in patient-specific risks.
+
+**6. POST-OPERATIVE CARE & FOLLOW-UP**
+Recovery timeline, ICU/ward placement, drain/monitoring needs, discharge criteria, outpatient follow-up schedule.
+
+Be precise, evidence-based, and professionally rigorous. This is for surgical team planning.
+2026-02-25 11:42:46,320 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:42:57,091 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (391 chars)
+2026-02-25 11:42:57,091 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:42:57,119 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:01,381 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-25 11:46:05,672 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-25 11:46:05,675 - medsync_ai.vector_db.vector_db - INFO - Collections initialized successfully
+2026-02-25 11:46:05,675 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-25 11:46:05,675 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-25 11:46:05,675 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-25 11:46:05,675 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-25 11:46:05,675 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-25 11:46:05,679 - __main__ - INFO - MedSync API initialized
+2026-02-25 11:46:05,695 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-25 11:46:28,480 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:30,119 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:30,204 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:30,206 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:33,047 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:41,177 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:46:53,797 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:47:11,965 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:47:26,811 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:48:23,345 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:48:23,369 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:48:37,497 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1883 chars)
+2026-02-25 11:48:37,497 - __main__ - INFO - Report analyzed: cancer_img.jpeg
+2026-02-25 11:49:18,094 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:49:18,109 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:49:30,312 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (391 chars)
+2026-02-25 11:49:30,313 - __main__ - INFO - Report analyzed: cancer_img.jpeg
+2026-02-25 11:49:30,357 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:49:30,364 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:49:39,762 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1925 chars)
+2026-02-25 11:49:39,762 - __main__ - INFO - Report analyzed: cancer_img.jpeg
+2026-02-25 11:49:39,773 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: Appendix operation in 2025
+Medications: Diabetic Meds
+Allergies: no
+Comorbidities: Diabetes
+
+IMAGING & LABS:
+Scan Findings: Here's a structured summary based on the provided medical report images:
+
+1.  **Report Type**:
+    *   **Abdominal CT Scans**: Panels A, B, D, E, G, H display axial computed tomography images of the upper abdomen.
+    *   **Histopathology**: Panels C, F, I show microscopic views of tissue sections, likely Hematoxylin and Eosin (H&E) stained, indicating biopsy analysis.
+
+2.  **Key Findings**:
+    *   **Gastric Mass/Wall Thickening (CT)**: Significant, irregular thickening and enhancement of the stomach wall, particularly involving the body and fundus, with an associated intraluminal mass effect (seen in panels A, B, D, E, G, H).
+    *   **Perigastric Infiltration (CT)**: Evidence of infiltration into the perigastric fat, suggesting local advanced disease (panels G, H).
+    *   **Histological Evidence of Malignancy**:
+        *   Panel F demonstrates irregular glandular structures infiltrating the stroma, characteristic of **adenocarcinoma**.
+        *   Panel C shows diffuse proliferation of atypical cells, possibly indicating a poorly differentiated component or a diffuse type.
+        *   Panel I displays sheets of pleomorphic, atypical cells, consistent with a high-grade or poorly differentiated malignancy.
+
+3.  **Measurements/Values**:
+    *   No specific numerical measurements (e.g., tumor size in cm, wall thickness in mm, lab values) are provided within the visual images.
+
+4.  **Clinical Impression**:
+    *   **Gastric Malignancy**: A large gastric mass with significant wall thickening and perigastric infiltration, highly suspicious for malignancy.
+    *   **Histopathological Diagnosis**: Consistent with **gastric adenocarcinoma**, exhibiting varying differentiation patterns, including well-formed glands and poorly differentiated components.
+
+5.  **Recommendations**:
+    *   No specific recommendations for treatment or further staging are mentioned or depicted within the provided images.
+Recent Labs: 
+
+As a senior surgical consultant, provide a COMPLETE and COMPREHENSIVE pre-operative analysis. 
+
+IMPORTANT: Provide your FULL response without abbreviation or truncation. Go through each section completely.
+
+Use a collegial, doc-to-doc tone and structure your response with these exact sections:
+
+**1. CLINICAL IMPRESSION**
+Summarize the patient's full clinical status based on demographics, vitals, and all provided data. Include detailed body system assessment and overall fitness for surgery.
+
+**2. RISK FACTORS & MEDICAL OPTIMIZATION**
+Explain medical, anatomical, and functional risks. What complications could develop if surgery is delayed? Include timeline concerns and optimization recommendations.
+
+**3. SURGICAL APPROACH & DETAILED STEPS**
+Outline the planned surgical procedure step-by-step with precision. Include key anatomical landmarks, critical checkpoints, instrument selection, and estimated duration.
+
+**4. INTRA-OPERATIVE CONSIDERATIONS**
+Detail specific risks DURING surgery for THIS patient: hemorrhage potential, vascular injury, anesthetic considerations, organ proximity, positioning concerns. Quantify where possible.
+
+**5. RISK STRATIFICATION & SUCCESS PROBABILITY**
+Provide estimated success rate (%) with detailed reasoning. Factor in patient-specific risks, comorbidities, age, and technical complexity.
+
+**6. POST-OPERATIVE MANAGEMENT PLAN**
+Recovery timeline, ICU/ward placement criteria, drain/monitoring parameters, pain management, discharge criteria, and structured outpatient follow-up schedule.
+
+**7. TEAM COORDINATION & CONTINGENCY**
+Expected team composition, backup plans for complications, alternative approaches if primary strategy fails, and communication checkpoints.
+
+**8. EVIDENCE-BASED RECOMMENDATIONS**
+Cite relevant guidelines and best practices. Provide actionable recommendations for optimal outcomes.
+
+Be precise, evidence-based, clinically rigorous, and COMPLETE. This is for surgical team planning and must be thorough.
+2026-02-25 11:49:40,012 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:49:53,101 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (406 chars)
+2026-02-25 11:49:53,102 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:49:53,144 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:49:53,151 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:50:04,655 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1948 chars)
+2026-02-25 11:50:04,656 - __main__ - INFO - Report analyzed: cancer_img.jpeg
+2026-02-25 11:50:31,744 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:50:31,760 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:50:45,202 - medsync_ai.rag_engine.surgeon_doubt - INFO - Gemini response received (1897 chars)
+2026-02-25 11:50:45,202 - __main__ - INFO - Report analyzed: cancer_img.jpeg
+2026-02-25 11:50:45,208 - medsync_ai.rag_engine.surgeon_doubt - INFO - Processing surgeon query: PATIENT CLINICAL PROFILE:
+Age: 54 years
+Gender: Male
+BMI: 0
+
+VITALS:
+BP: 120/80 mmHg
+Blood Sugar: 240 mg/dL
+Height: 170cm | Weight: 70kg
+
+CLINICAL DATA:
+Diagnosis: Appendix operation in 2025
+Medications: Diabetic Meds
+Allergies: no
+Comorbidities: Diabetes
+
+IMAGING & LABS:
+Scan Findings: This medical report image combines cross-sectional imaging with histopathological findings.
+
+**1. Report Type:**
+*   Computed Tomography (CT) scans of the abdomen (Images A, B, D, E, G, H)
+*   Histopathology (H&E stain) microscopic images (Images C, F, I)
+
+**2. Key Findings:**
+*   **CT Scans:**
+    *   Presence of a large, heterogeneous, predominantly hypodense mass in the left upper quadrant/perigastric region, extending into the retroperitoneum.
+    *   The mass appears to be associated with or arise from the pancreas or peripancreatic region, displacing the stomach anteriorly and other abdominal organs.
+    *   Areas of cystic degeneration or necrosis are evident within the mass.
+    *   Possible presence of ascites (peritoneal fluid) in the abdominal cavity (e.g., around the liver and spleen).
+*   **Histopathology:**
+    *   **Image C:** Shows a densely packed proliferation of small, round cells with scant cytoplasm, suggestive of a small cell carcinoma or a neuroendocrine tumor.
+    *   **Image F:** Demonstrates glandular differentiation with irregular tubular structures and atypical epithelial cells, consistent with adenocarcinoma.
+    *   **Image I:** Reveals a proliferation of spindle-shaped cells arranged in fascicles, with varying degrees of cellularity and pleomorphism, suggestive of a sarcoma or a poorly differentiated carcinoma with sarcomatoid features.
+    *   *Note:* The presence of three distinct histological patterns (small cell/neuroendocrine, adenocarcinoma, and spindle cell/sarcomatoid) from what appears to be a single large mass on CT suggests either a highly heterogeneous tumor (e.g., mixed adeno-neuroendocrine carcinoma, sarcomatoid differentiation within a carcinoma) or represents different biopsy sites within a complex lesion, or possibly different tumor types presented for comparison.
+
+**3. Measurements/Values:**
+*   No explicit numerical
+Recent Labs: 
+
+To the surgical team,
+
+Thank you for the detailed clinical profile and the opportunity to provide a comprehensive pre-operative analysis for this patient. The case presents a locally advanced gastric malignancy in a patient with uncontrolled diabetes, necessitating a meticulous and well-coordinated surgical plan.
+
+---
+
+**1. CLINICAL IMPRESSION**
+
+This is a 54-year-old male presenting with a diagnosis of
+
+Create a detailed surgical roadmap using the CholecT45 framework (for cholecystectomy):
+
+**DETAILED PROCEDURAL ROADMAP**
+- Step 1-2: Positioning & access
+- Step 3-4: Initial exploration & dissection
+- Step 5-6: Critical view of safety achievement
+- Step 7-8: Arterial and duct division
+- Step 9: Specimen extraction and closure
+
+For each step: describe technique, anatomical pearls, specific risks for THIS patient, troubleshooting strategies.
+
+Be surgical and specific.
+2026-02-25 11:50:45,413 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:50:45,743 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 14.484336396s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2026-02-25 11:50:45,743 - medsync_ai.rag_engine.surgeon_doubt - INFO - Query processed - Risk scores: Hemorrhage=0.00, Anesthetic=0.00
+2026-02-25 11:50:45,786 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:50:45,794 - medsync_ai.rag_engine.surgeon_doubt - INFO - Querying Gemini: gemini-2.5-flash
+2026-02-25 11:50:46,240 - medsync_ai.rag_engine.surgeon_doubt - ERROR - Gemini API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 13.986299494s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 13
+}
+]
+2026-02-25 11:50:46,240 - __main__ - INFO - Report analyzed: cancer_img.jpeg
+2026-02-25 11:54:02,820 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:54:02,934 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:54:02,987 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:54:03,060 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:54:04,126 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:54:05,084 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-25 11:54:26,829 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:37:38,878 - medsync_ai.vector_db.vector_db - WARNING - ChromaDB not available. Vector database will operate in demo mode.
+2026-02-26 12:37:38,879 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-26 12:37:46,570 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-26 12:37:46,570 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-26 12:37:46,570 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-26 12:37:46,570 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-26 12:37:46,570 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-26 12:37:46,570 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-26 12:37:46,573 - __main__ - INFO - MedSync API initialized
+2026-02-26 12:37:46,822 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-26 12:38:00,140 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:39:15,847 - medsync_ai.vector_db.vector_db - WARNING - ChromaDB not available. Vector database will operate in demo mode.
+2026-02-26 12:39:15,847 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-26 12:39:22,672 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-26 12:39:22,672 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-26 12:39:22,673 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-26 12:39:22,673 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-26 12:39:22,673 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-26 12:39:22,673 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-26 12:39:22,676 - __main__ - INFO - MedSync API initialized
+2026-02-26 12:39:22,690 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-26 12:39:24,480 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:39:55,669 - medsync_ai.vector_db.vector_db - WARNING - ChromaDB not available. Vector database will operate in demo mode.
+2026-02-26 12:39:55,669 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-26 12:40:02,542 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-26 12:40:02,542 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-26 12:40:02,542 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-26 12:40:02,542 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-26 12:40:02,542 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-26 12:40:02,542 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-26 12:40:02,547 - __main__ - INFO - MedSync API initialized
+2026-02-26 12:40:02,558 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-26 12:40:07,947 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:40:54,374 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:41:02,892 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:41:02,926 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:41:26,095 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:41:44,723 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:46:20,010 - medsync_ai.vector_db.vector_db - WARNING - ChromaDB not available. Vector database will operate in demo mode.
+2026-02-26 12:46:20,011 - medsync_ai.vector_db.vector_db - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-02-26 12:46:26,684 - medsync_ai.vector_db.vector_db - INFO - Embedding dimension: 384
+2026-02-26 12:46:26,684 - medsync_ai.vector_db.vector_db - INFO - Vector database initialized at /Users/dhanavijayan/Documents/MedSync copy/medsync_ai/chromadb_store
+2026-02-26 12:46:26,684 - medsync_ai.rag_engine.surgeon_doubt - INFO - Initialized Gemini client: gemini-2.5-flash
+2026-02-26 12:46:26,684 - medsync_ai.rag_engine.surgeon_doubt - INFO - RAG Engine initialized
+2026-02-26 12:46:26,684 - medsync_ai.surgical_vision.vqla_analyzer - INFO - Surgical Scene Analyzer initialized
+2026-02-26 12:46:26,684 - medsync_ai.surgical_vision.vqla_analyzer - INFO - VQLA Integration initialized
+2026-02-26 12:46:26,689 - __main__ - INFO - MedSync API initialized
+2026-02-26 12:46:26,699 - __main__ - INFO - Starting MedSync API on 0.0.0.0:8000
+2026-02-26 12:46:41,763 - medsync_ai.rag_engine.surgeon_doubt - INFO - ✓ Gemini API available - model gemini-2.5-flash is configured
+2026-02-26 12:46:42,340 - __main__ - INFO - Clinical analysis completed for patient P12345
+2026-02-26 12:46:42,563 - __main__ - INFO - Diagnosis analysis completed for Esophageal Squamous Cell Carcinoma
+2026-02-26 12:46:42,697 - __main__ - INFO - Clinical question answered for patient P12345
+2026-02-26 12:46:42,867 - __main__ - INFO - Clinical question answered for patient P12345
+2026-02-26 12:46:43,026 - __main__ - INFO - Clinical question answered for patient P12345
+2026-02-26 12:46:43,176 - __main__ - INFO - Clinical question answered for patient P12345
+2026-02-26 12:46:43,334 - __main__ - INFO - Clinical question answered for patient P12345
